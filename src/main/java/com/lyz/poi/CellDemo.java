@@ -17,11 +17,11 @@ public class CellDemo {
 		Row row=sheet.createRow(0);
 		Cell cell=row.createCell(0); // 创建一个单元格  第1列
 		cell.setCellValue(1);  // 给单元格设置值
-		row.createCell(1).setCellValue(1.2);   // 创建一个单元格 第2列 值是1.2
+		row.createCell(1).setCellValue(666);   // 第2列 值是666
 
-		row.createCell(2).setCellValue("这是一个字符串类型"); // 创建一个单元格 第3列 值为一个字符串
+		row.createCell(2).setCellValue("str"); // 第3列 值为一个str
 
-		row.createCell(3).setCellValue(false);  // 创建一个单元格 第4列 值为布尔类型
+		row.createCell(3).setCellValue(false);  // 第4列 值为布尔类型
 
 		FileOutputStream fileOut=new FileOutputStream("F:\\workbook1.xls");
 		workbook.write(fileOut);
