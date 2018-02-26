@@ -11,6 +11,10 @@ import org.apache.poi.ss.usermodel.CreationHelper;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
+
+/**
+ * 时间格式的单元格
+ */
 public class DateSheet {
     public static void main(String[] args)  throws Exception {
         Workbook workbook=new HSSFWorkbook();
